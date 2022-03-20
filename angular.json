@@ -72,13 +72,15 @@
               "sslKey": "./ssl/server.key",
               "sslCert": "./ssl/server.crt",
               "ssl": true,
-              "browserTarget": "client:build:production"
+              "browserTarget": "client:build:production",
+			  "proxyConfig": "src/proxy.conf.json"
             },
             "development": {
               "sslKey": "./ssl/server.key",
               "sslCert": "./ssl/server.crt",
               "ssl": true,
-              "browserTarget": "client:build:development"
+              "browserTarget": "client:build:development",
+			  "proxyConfig": "src/proxy.conf.json"
             }
           },
           "defaultConfiguration": "development"
